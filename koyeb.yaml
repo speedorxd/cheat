@@ -1,6 +1,6 @@
-name: ⁽ ᔆᴾᴱᴱᴰ ™ ⌁ ₎ 
+name: ⁽ ᔆᴾᴱᴱᴰ ™ ⌁ ₎
 services:
-  - name: ⁽ ᔆᴾᴱᴱᴰ ™ ⌁ ₎ 
+  - name: ⁽ ᔆᴾᴱᴱᴰ ™ ⌁ ₎
     type: web
     description: A simple web service
     port: 80
