@@ -1,0 +1,23 @@
+name: ⁽ ᔆᴾᴱᴱᴰ ™ ⌁ ₎ 
+services:
+  - name: ⁽ ᔆᴾᴱᴱᴰ ™ ⌁ ₎ 
+    type: web
+    description: A simple web service
+    port: 80
+    instance_type: nano
+    routes:
+      - name: main
+        path: /
+    build:
+      type: buildpack
+      repository: https://github.com/speedorxd/cheat212.git
+      branch: main
+    env:
+      - key: api_id
+        value: ""
+      - key: api_hash
+        value: ""
+      - key: admin_mode
+        value: ""
+      - key: session_name
+        value: ""
