@@ -1,0 +1,34 @@
+{
+    "name": "⁽ ᔆᴾᴱᴱᴰ ™ ⌁ ₎",
+    "description": "تنصيب سورس المسابقات @l_s_I_I.",
+    "logo": "https://telegra.ph/file/9a475a189b8cbf68f3047.jpg",
+    "keywords": [
+        "telegram",
+        "bot"
+    ],
+    "repository": "ᔆ ᴾ ᴱ ᴱ ᴰ ™𝓼",
+    "website": "",
+    "success_url": "https://t.me/JJ7AA",
+    "env": {
+        "api_id": {
+            "description": "اب ايدي من هنا my.telegram.org/",
+            "value": ""
+        },
+        "api_hash": {
+            "description": "اب هاش من هنا my.telegram.org/.",
+            "value": ""
+        },
+        "admin_mode": {
+            "description": " ايدي حسابك علي تيليجرام.",
+            "value": ""
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        },
+        {
+            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+        }
+    ]
+}

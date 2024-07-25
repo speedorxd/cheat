@@ -1,0 +1,1 @@
+worker: python cheat_v4_pro.py
