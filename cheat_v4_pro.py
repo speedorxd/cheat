@@ -1,14 +1,15 @@
 from telethon import TelegramClient, events, functions
 import re
+import os
 from colorama import init, Fore, Back, Style
 import asyncio
 
 api_identifier = os.getenv("api_id")
 api_hash_value = os.getenv("api_hash")
-admin_mode = os.getenv("admin_mode")
+admin_mode = int(os.getenv("admin_mode"))
+session_name = os.getenv("session_name")
 
-telegram_client = TelegramClient('session_name', api_identifier, api_hash_value).start()
-telegram_client.start()
+telegram_client = TelegramClient(session_name, api_identifier, api_hash_value).start()
 init(autoreset=True)
 
 ascii_logo = (
@@ -20,13 +21,6 @@ ascii_logo = (
     Fore.LIGHTRED_EX + Style.BRIGHT + " \\____/ |_| \\_|  |______|______|\\____/ (_)\n" +
     Fore.LIGHTRED_EX + Style.BRIGHT + "GNAZH V4"
 )
-
-channel_invite_link = "t.me/JJ7AA"
-
-print(ascii_logo)
-print(Fore.LIGHTBLUE_EX + Style.BRIGHT + "\nClick here to join our Telegram channel: " + Fore.LIGHTGREEN_EX + Style.BRIGHT + channel_invite_link)
-print(Fore.CYAN + Style.BRIGHT + "\nThe source is running successfully . . . ")
-print(Fore.LIGHTBLUE_EX + Style.BRIGHT + "_____________________________")
 
 channel_invite_link = "t.me/JJ7AA"
 
