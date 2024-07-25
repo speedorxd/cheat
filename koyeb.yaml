@@ -1,8 +1,8 @@
-name: ⁽ ᔆᴾᴱᴱᴰ ™ ⌁ ₎
+name: cheat212
 services:
-  - name: ⁽ ᔆᴾᴱᴱᴰ ™ ⌁ ₎
+  - name: cheat212_service
     type: web
-    description: A simple web service
+    description: A simple web service to run cheat_v4_pro.py
     port: 80
     instance_type: nano
     routes:
@@ -21,3 +21,5 @@ services:
         value: ""
       - key: session_name
         value: ""
+    run:
+      command: python3 cheat_v4_pro.py
